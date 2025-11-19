@@ -22,14 +22,14 @@ const Question = ({ onYes }) => {
 
   return (
     <div className="flex items-center justify-center w-full h-dvh">
-      <div className="flex flex-col items-center justify-center w-full h-screen overflow-hidden">
+      <div className="flex flex-col gap-1 items-center justify-center w-full h-screen overflow-hidden">
         <img src={meme.src} alt="" />
-        <h2>Crush mo ba ako?</h2>
+        <h2 className="text-3xl">Crush mo ba ako?</h2>
         <div className="relative w-full text-center h-fit">
-          <button onClick={onYes}>OO</button>
+          <button onClick={onYes} className="m-1 inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-gray-600 whitespace-no-wrap bg-white border border-gray-200 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:shadow-none">OO</button>
           <button
             onClick={randomizer}
-            className="relative"
+            className="m-1 relative inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-gray-600 whitespace-no-wrap bg-white border border-gray-200 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:shadow-none"
             style={{ top: `${y}px`, left: `${x}px` }}
           >
             HINDI
@@ -41,3 +41,7 @@ const Question = ({ onYes }) => {
 };
 
 export default Question;
+
+<a href="#_" class="">
+    Button Text
+</a>
